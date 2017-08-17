@@ -41,6 +41,20 @@ li {
   list-style-type: none; 
 }
 
+li span.delete-todo {
+  visibility: hidden;
+} 
+
+span.delete-todo button {
+  background: none;
+  border: none;
+  font-size: 1em;
+  color: yellowgreen;
+} 
+li:hover span.delete-todo {
+  visibility: visible;
+}
+
 .message {
   color: green;
   font-style: oblique;
