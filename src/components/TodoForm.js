@@ -3,7 +3,6 @@ import React from 'react'
 export default (props) => {
   const {currentTodo, changeCurrent} = props
   const handleInputChange = (e) => {
-    // e.preventDefault()
     const val = e.target.value
     changeCurrent(val)
   }
@@ -12,6 +11,7 @@ export default (props) => {
       <input
         type='text'
         onChange={handleInputChange}
+        placeholder='Add a new Todo...'
         value={currentTodo} />
     </form>
   )

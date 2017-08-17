@@ -4,14 +4,19 @@ const initialState = {
     {id: 2, name: 'Create Initial State', isComplete: false},
     {id: 3, name: 'Use state to render UI', isComplete: false}
   ],
-  currentTodo: 'temp'
+  currentTodo: ''
 }
+
+const CURRENT_UPDATE = 'CURRENT_UPDATE'
+const TODO_ADD = 'TODO_ADD'
+
+export const updateCurrent = (val) => ({type: 'CURRENT_UPDATE', payload: val})
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case 'TODO_ADD':
+    case TODO_ADD:
       return {...state, todos: state.todos.concat(action.payload)}
-    case 'CURRENT_UPDATE':
+    case CURRENT_UPDATE:
       return {...state, currentTodo: action.payload}
     default:
       return state
