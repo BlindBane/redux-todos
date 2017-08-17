@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import logo from './logo.svg'
 import './App.css'
+import TodoForm from './components/TodoForm'
+import TodoList from './components/TodoList'
 
 class App extends Component {
   render () {
@@ -10,9 +12,13 @@ class App extends Component {
           <img src={logo} className='App-logo' alt='logo' />
           <h2>Welcome to React</h2>
         </div>
-        <p className='App-intro'>
-          To get started, edit <code>src/sApp.js</code> and save to reload.
-        </p>
+        <div className='Todo-app'>
+          <TodoForm
+            currentTodo={this.props.currentTodo}
+            changeCurrent={this.props.changeCurrent}
+           />
+          <TodoList todos={this.props.todos} />
+        </div>
       </div>
     )
   }
