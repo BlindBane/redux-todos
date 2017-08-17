@@ -9,21 +9,7 @@
       "id": 2,
       "name": "Order a burger",
       "isComplete": true
-    },
-    {
-      "id": 3,
-      "name": "Order a hotdog",
-      "isComplete": false
-    },
-    {
-      "name": "safdsd",
-      "isComplete": false,
-      "id": 4
-    },
-    {
-      "name": "Hi",
-      "isComplete": false,
-      "id": 5
     }
+    
   ]
 }
