@@ -1,0 +1,7 @@
+{
+  "todos": [
+    { "id": 1, "name": "Order a pizza", "isComplete": false },
+    { "id": 2, "name": "Order a burger", "isComplete": true },
+    { "id": 3, "name": "Order a hotdog", "isComplete": false }
+  ]
+}
