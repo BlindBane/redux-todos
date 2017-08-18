@@ -1,3 +1,6 @@
+This project was created by following Built following https://github.com/avanslaars/egghead_react_redux_course repo.
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
