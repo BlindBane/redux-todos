@@ -51,6 +51,17 @@ export const deleteTodo = (id) => {
   }
 }
 
+export const getFilteredTodos = (todos, filter) => {
+  switch (filter) {
+    case 'active':
+      return todos.filter(todo => !todo.isComplete)
+    case 'complete':
+      return todos.filter(todo => todo.isComplete)
+    default:
+      return todos
+  }
+}
+
 export default (state = initialState, action) => {
   switch (action.type) {
     case TODO_ADD:
